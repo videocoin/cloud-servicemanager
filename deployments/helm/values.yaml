@@ -2,7 +2,7 @@ replicasCount: 1
 maxUnavailableCount: 0
 
 image:
-  repository: gcr.io/videocoin-network/svcmgr
+  repository: gcr.io/videocoin-network/servicemanager
   tag: latest
   pullPolicy: Always
 

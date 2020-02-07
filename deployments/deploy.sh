@@ -1,11 +1,11 @@
 #!/bin/bash
 
-readonly CHART_NAME=svcmgr
+readonly CHART_NAME=servicemanager
 readonly CHART_DIR=./deployments/helm
 
 CONSUL_ADDR="${CONSUL_ADDR:=127.0.0.1:8500}"
 ENV=${ENV:=dev}
-VERSION=${VERSION:=`git describe --abbrev=0 --always`-`git rev-parse --abbrev-ref HEAD`-`git rev-parse --short HEAD`}
+VERSION=${VERSION:=`git describe --abbrev=0`-`git rev-parse --abbrev-ref HEAD`-`git rev-parse --short HEAD`}
 
 function log {
   local readonly level="$1"

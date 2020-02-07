@@ -8,7 +8,7 @@ import (
 	"os/signal"
 	"syscall"
 
-	sm "github.com/videocoin/videocoinapis-admin/videocoin/admin/api/servicemanagement/v1"
+	svcmgr "github.com/videocoin/cloud-api/servicemanager/v1"
 	healthpb "google.golang.org/grpc/health/grpc_health_v1"
 
 	"github.com/kelseyhightower/envconfig"
@@ -21,7 +21,6 @@ import (
 	"golang.org/x/sync/errgroup"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/health"
-	"google.golang.org/grpc/reflection"
 )
 
 var (
@@ -79,8 +78,7 @@ func main() {
 		defer DB.Close()
 
 		grpcSrv = grpc.NewServer(grpcutil.DefaultServerOpts(log)...)
-		reflection.Register(grpcSrv)
-		sm.RegisterServiceManagerServer(grpcSrv, service.NewServer(log, DB))
+		svcmgr.RegisterServiceManagerServer(grpcSrv, service.NewServer(log, DB))
 		healthpb.RegisterHealthServer(grpcSrv, healthSrv)
 
 		healthSrv.SetServingStatus(fmt.Sprintf("grpc.health.v1.%s", ServiceName), healthpb.HealthCheckResponse_SERVING)

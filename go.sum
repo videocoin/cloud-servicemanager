@@ -1,5 +1,4 @@
 cloud.google.com/go v0.26.0/go.mod h1:aQUYkXzVsufM+DwF1aE+0xfcU+56JwCaLick0ClmMTw=
-cloud.google.com/go v0.34.0/go.mod h1:aQUYkXzVsufM+DwF1aE+0xfcU+56JwCaLick0ClmMTw=
 github.com/BurntSushi/toml v0.3.1/go.mod h1:xHWCNGjB5oqiDr8zfno3MHue2Ht5sIBksp03qcyfWMU=
 github.com/aead/siphash v1.0.1/go.mod h1:Nywa3cDsYNNK3gaciGTWPwHt0wlpNV15vwmswBAUSII=
 github.com/alecthomas/template v0.0.0-20160405071501-a0175ee3bccc/go.mod h1:LOuyumcjzFXgccqObfd/Ljyb9UuFJ6TxHnclSeseNhc=
@@ -222,14 +221,8 @@ github.com/videocoin/cloud-api v0.0.17/go.mod h1:6HhpNaw1C8VsYtRpaF2gNZCKJmZjWje
 github.com/videocoin/cloud-api v0.3.1-0.20200206041936-260732c1cfb1 h1:FFyig1f+gaOL0w9huVRVfnMSynccEJafyQEJNLOG4ug=
 github.com/videocoin/cloud-api v0.3.1-0.20200206041936-260732c1cfb1/go.mod h1:Dfgrr9VyNJspyJh/vzOewf5Mu2uKyQLzP79/IEOBLng=
 github.com/videocoin/cloud-pkg v0.0.5/go.mod h1:zB1t/OI+YAP5dVshydrqkaPQs8ug1/mA77xjiELgaSs=
-github.com/videocoin/cloud-pkg v0.0.8-0.20200207052840-495efec72284 h1:SqsVKeqnhPSwkCzJVla3PmxJiPZJc+R4MGg7AaLNZMo=
-github.com/videocoin/cloud-pkg v0.0.8-0.20200207052840-495efec72284/go.mod h1:reC7JdY0mdVAriZvJnWZOy8MiJpTBU0MpUuAas0fXkg=
-github.com/videocoin/common v0.3.0 h1:Cd3I6uaL2dDVWb2SwiV0Y17skD2EUeChCg3cRbJD7rQ=
-github.com/videocoin/common v0.3.0/go.mod h1:TrKsSCMQaDMLKqaIDS8CkdXSvv1ENC0l+0II3XZ+qgk=
-github.com/videocoin/oauth2 v0.0.0-20200129165645-551506ee10d6 h1:xYKterQ8F/yXd2QflU3/rOl63lprMpA5YAZMEpSGDCo=
-github.com/videocoin/oauth2 v0.0.0-20200129165645-551506ee10d6/go.mod h1:3SJZ2TX6cSvTqfrAJGktYPcskzw4BxqHzjvgcJSvNUg=
-github.com/videocoin/videocoinapis-admin v0.1.1 h1:7nklWrP0onwIrhtxp8D38TzjTbQDXg5Rw3XTEwvSiHc=
-github.com/videocoin/videocoinapis-admin v0.1.1/go.mod h1:cxTl6mHbqoxK4FbPpAELDFaCgFtvm9HvdXHeurCdCV8=
+github.com/videocoin/cloud-pkg v0.0.8-0.20200207023524-d9b46239c07c h1:mQnosMCGXbrZH7ZzLxZIG+gW0I+wJX99euFVHSWQtKw=
+github.com/videocoin/cloud-pkg v0.0.8-0.20200207023524-d9b46239c07c/go.mod h1:reC7JdY0mdVAriZvJnWZOy8MiJpTBU0MpUuAas0fXkg=
 go.uber.org/atomic v1.5.1 h1:rsqfU5vBkVknbhUGbAUwQKR2H4ItV8tjJ+6kJX4cxHM=
 go.uber.org/atomic v1.5.1/go.mod h1:sABNBOSYdrvTF6hTgEIbc7YasKWGhgEQZyfxyTvoXHQ=
 golang.org/x/crypto v0.0.0-20170930174604-9419663f5a44/go.mod h1:6SG95UA2DQfeDnfUPMdvaQW0Q7yPrPDi9nlGo2tz2b4=
@@ -256,7 +249,6 @@ golang.org/x/net v0.0.0-20181023162649-9b4f9f5ad519/go.mod h1:mL1N/T3taQHkDXs73r
 golang.org/x/net v0.0.0-20181114220301-adae6a3d119a/go.mod h1:mL1N/T3taQHkDXs73rZJwtUhF3w3ftmwwsq0BUmARs4=
 golang.org/x/net v0.0.0-20181201002055-351d144fa1fc/go.mod h1:mL1N/T3taQHkDXs73rZJwtUhF3w3ftmwwsq0BUmARs4=
 golang.org/x/net v0.0.0-20181220203305-927f97764cc3/go.mod h1:mL1N/T3taQHkDXs73rZJwtUhF3w3ftmwwsq0BUmARs4=
-golang.org/x/net v0.0.0-20190108225652-1e06a53dbb7e/go.mod h1:mL1N/T3taQHkDXs73rZJwtUhF3w3ftmwwsq0BUmARs4=
 golang.org/x/net v0.0.0-20190213061140-3a22650c66bd/go.mod h1:mL1N/T3taQHkDXs73rZJwtUhF3w3ftmwwsq0BUmARs4=
 golang.org/x/net v0.0.0-20190311183353-d8887717615a/go.mod h1:t9HGtf8HONx5eT2rtn7q6eTqICYqUVnKs3thJo3Qplg=
 golang.org/x/net v0.0.0-20190404232315-eb5bcb51f2a3/go.mod h1:t9HGtf8HONx5eT2rtn7q6eTqICYqUVnKs3thJo3Qplg=
@@ -266,8 +258,6 @@ golang.org/x/net v0.0.0-20190620200207-3b0461eec859 h1:R/3boaszxrf1GEUWTVDzSKVwL
 golang.org/x/net v0.0.0-20190620200207-3b0461eec859/go.mod h1:z5CRVTTTmAJ677TzLLGU+0bjPO0LkuOLi4/5GtJWs/s=
 golang.org/x/oauth2 v0.0.0-20180821212333-d2e6202438be h1:vEDujvNQGv4jgYKudGeI/+DAX4Jffq6hpD55MmoEvKs=
 golang.org/x/oauth2 v0.0.0-20180821212333-d2e6202438be/go.mod h1:N/0e6XlmueqKjAGxoOufVs8QHGRruUQn6yWY3a++T0U=
-golang.org/x/oauth2 v0.0.0-20200107190931-bf48bf16ab8d h1:TzXSXBo42m9gQenoE3b9BGiEpg5IG2JkU5FkPIawgtw=
-golang.org/x/oauth2 v0.0.0-20200107190931-bf48bf16ab8d/go.mod h1:gOpvHmFTYa4IltrdGE7lF6nIHvwfUNPOp7c8zoXwtLw=
 golang.org/x/sync v0.0.0-20180314180146-1d60e4601c6f/go.mod h1:RxMgew5VJxzue5/jJTE5uejpjVlOe/izrB70Jof72aM=
 golang.org/x/sync v0.0.0-20181108010431-42b317875d0f/go.mod h1:RxMgew5VJxzue5/jJTE5uejpjVlOe/izrB70Jof72aM=
 golang.org/x/sync v0.0.0-20181221193216-37e7f081c4d4/go.mod h1:RxMgew5VJxzue5/jJTE5uejpjVlOe/izrB70Jof72aM=

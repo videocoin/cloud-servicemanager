@@ -38,19 +38,18 @@ spec:
                   fieldPath: status.hostIP
             - name: JAEGER_AGENT_PORT
               value: "6831"
-            - name: RPC_ADDR
-              value: 0.0.0.0:{{ .Values.service.internalRpcPort }}
-            - name: DBURI
-              valueFrom:
-                secretKeyRef:
-                  name: {{ .Chart.Name }}
-                  key: dbUri
-
             - name: SENTRY_DSN
               valueFrom:
                 secretKeyRef:
                   name: {{ .Chart.Name }}
                   key: sentryDsn
+            - name: SERVICEMANAGER_RPCADDR
+              value: 0.0.0.0:{{ .Values.service.internalRpcPort }}
+            - name: SERVICEMANAGER_DBURI
+              valueFrom:
+                secretKeyRef:
+                  name: {{ .Chart.Name }}
+                  key: dbUri
           {{- if .Values.resources }}
           resources:
 {{ toYaml .Values.resources | indent 12 }}
