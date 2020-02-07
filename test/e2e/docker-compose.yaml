@@ -1,0 +1,35 @@
+version: "3.4"
+
+services:
+  mysql:
+    image: mysql:5.7
+    environment:
+      MYSQL_ALLOW_EMPTY_PASSWORD: "true"
+      MYSQL_DATABASE: "videocoin"
+    ports:
+      - "3306:3306"
+    volumes:
+      - db_data:/var/lib/mysql
+
+  migrate:
+    build:
+      context: ../../
+    command:
+      [
+        "migrate",
+        "-path",
+        "/migrations",
+        "-database",
+        "mysql://root:@tcp(mysql:3306)/videocoin?charset=utf8&parseTime=True&loc=Local",
+        "up",
+      ]
+
+  svcd:
+    build:
+      context: ../../
+    environment:
+      SERVICEMANAGER_DBURI: "root:@tcp(mysql:3306)/videocoin?charset=utf8&parseTime=True&loc=Local"
+    ports:
+      - "5000:5000"
+volumes:
+  db_data: {}
