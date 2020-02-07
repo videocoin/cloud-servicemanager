@@ -1,0 +1,23 @@
+replicasCount: 1
+maxUnavailableCount: 0
+
+image:
+  repository: gcr.io/videocoin-network/svcmgr
+  tag: latest
+  pullPolicy: Always
+
+config: {}
+
+service:
+  type: ClusterIP
+  externalRpcPort: 5000
+  internalRpcPort: 5000
+
+resources:
+  requests:
+    cpu: 100m
+    memory: 100Mi
+
+secrets:
+  dbUri: ""
+  sentryDsn: ""
